@@ -3,6 +3,12 @@ package se.iths.sebastian.parprogramering.ovning;
 public class Main {
     static void main() {
 
-        IO.println("Hello World!");
+        String libaryName = "Stora Bibloteket";
+        int bookCount = 12;
+        boolean isOpen = true;
+
+        IO.println(libaryName + "\n"
+                + bookCount + "\n"
+                + isOpen);
     }
 }
