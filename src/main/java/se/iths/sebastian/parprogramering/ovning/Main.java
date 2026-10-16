@@ -8,6 +8,8 @@ public class Main {
         int bookCount = 12;
         int availableBookCount = bookCount - borrowedBookCount;
 
+        boolean isOpen = false;
+
         IO.println("Böcker som blir kvar: " + availableBookCount);
 
         String firstName = "Fredrik";
@@ -16,5 +18,11 @@ public class Main {
 
         IO.println("Välkommen " + fullName + " till " + libaryName);
 
+        if (isOpen == true) {
+            IO.println("Det är öppet!");
+        }
+        else {
+            IO.println("Det är stängt!");
+        }
     }
 }
