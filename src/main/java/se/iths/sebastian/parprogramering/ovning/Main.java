@@ -3,12 +3,11 @@ package se.iths.sebastian.parprogramering.ovning;
 public class Main {
     static void main() {
 
-        String libaryName = "Stora Bibloteket";
+        int borrowedBookCount = 8;
         int bookCount = 12;
-        boolean isOpen = true;
+        int availableBookCount = bookCount - borrowedBookCount;
 
-        IO.println(libaryName + "\n"
-                + bookCount + "\n"
-                + isOpen);
+        IO.println("Böcker som blir kvar: " + availableBookCount);
+
     }
 }
