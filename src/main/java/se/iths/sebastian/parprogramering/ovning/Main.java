@@ -31,5 +31,10 @@ public class Main {
         } else {
             IO.println("Det finns böcker kvar");
         }
+
+        for(int i = 1; i <= bookCount; i++) {
+            IO.println("bok" + i);
+
+        }
     }
 }
