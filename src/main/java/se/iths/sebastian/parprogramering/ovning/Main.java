@@ -4,7 +4,7 @@ public class Main {
     static void main() {
 
         String libaryName = "Stora Bibloteket";
-        int borrowedBookCount = 8;
+        int borrowedBookCount = 4;
         int bookCount = 12;
         int availableBookCount = bookCount - borrowedBookCount;
 
@@ -20,9 +20,16 @@ public class Main {
 
         if (isOpen == true) {
             IO.println("Det är öppet!");
-        }
-        else {
+        } else {
             IO.println("Det är stängt!");
+        }
+
+        if (availableBookCount <= 0) {
+            IO.println("Alla böcker är slut");
+        } else if (availableBookCount >= 1 && availableBookCount <= 3) {
+            IO.println("Det är nästan slut på böcker");
+        } else {
+            IO.println("Det finns böcker kvar");
         }
     }
 }
